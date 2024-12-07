@@ -6,7 +6,7 @@ def spin_row():
     return [random.choice(Symbols) for _ in range(3)]
     
 
-def print_row(row):
+def style_show(row):
     print("************")
     print(" | ".join(row))
     print("************")    
@@ -56,7 +56,7 @@ def main():
         balance -= bet
         
         row = spin_row()
-        print_row(row)
+        style_show(row)
         
         pay = get_payout(row, bet)
         
